@@ -1,4 +1,4 @@
-# @omni-build/core
+# @omni-kit/builder-core
 
 Fork from [Doubleshot](https://github.com/Doubleshotjs/doubleshot), based on [tsdown](https://github.com/rolldown/tsdown).
 

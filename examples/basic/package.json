@@ -13,7 +13,7 @@
     "electron": "^28.0.0",
     "electron-builder": "^26.0.12",
     "tsdown": "^0.16.5",
-    "@omni-build/core": "workspace:*"
+    "@omni-kit/builder-core": "workspace:*"
   },
   "pnpm": {
     "onlyBuiltDependencies": [

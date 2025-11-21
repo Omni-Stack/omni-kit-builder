@@ -63,7 +63,7 @@ importers:
 
   examples/basic:
     devDependencies:
-      '@omni-build/core':
+      '@omni-kit/builder-core':
         specifier: workspace:*
         version: link:../../packages/core
       electron:
@@ -121,7 +121,7 @@ importers:
 
   packages/vite-plugin:
     dependencies:
-      '@omni-build/core':
+      '@omni-kit/builder-core':
         specifier: workspace:*
         version: link:../core
       vite:

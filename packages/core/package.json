@@ -1,11 +1,11 @@
 {
-  "name": "@omni-build/core",
+  "name": "@omni-kit/builder-core",
   "version": "0.0.0",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
   "types": "dist/index.d.mts",
   "bin": {
-    "omni-build": "dist/cli.mjs",
+    "omni-builder": "dist/cli.mjs",
     "omni": "dist/cli.mjs",
     "ob": "dist/cli.mjs"
   },

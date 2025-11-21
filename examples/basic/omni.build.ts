@@ -1,4 +1,4 @@
-import { defineConfig } from "@omni-build/core"
+import { defineConfig } from "@omni-kit/builder-core"
 
 export default defineConfig({
   entry: "./src/main.ts",

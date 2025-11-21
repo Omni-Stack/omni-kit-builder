@@ -1,5 +1,5 @@
 {
-  "name": "omni-build",
+  "name": "@omni-kit/builder",
   "scripts": {
     "dev:lib": "pnpm --filter './{packages,shared}/**' dev --parallel",
     "build:lib": "pnpm --filter './{packages,shared}/**' build",
