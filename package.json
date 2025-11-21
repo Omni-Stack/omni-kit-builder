@@ -1,0 +1,14 @@
+{
+  "name": "omni-build",
+  "scripts": {
+    "dev:lib": "pnpm --filter './{packages,shared}/**' dev --parallel",
+    "build:lib": "pnpm --filter './{packages,shared}/**' build",
+    "clear:lib": "pnpm --filter './{packages,shared}/**' clear",
+    "clear-all:lib": "pnpm --filter './{packages,shared}/**' clear-all",
+    "clear": "npx rimraf dist",
+    "clear-all": "npx rimraf dist node_modules"
+  },
+  "devDependencies": {
+    "vitest": "catalog:"
+  }
+}

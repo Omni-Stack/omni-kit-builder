@@ -1,0 +1,37 @@
+packages:
+  - shared/*
+  - packages/*
+  - examples/*
+  - '!**/test/**'
+
+catalog:
+  cac: ^6.7.14
+  ansis: ^4.2.0
+  tsdown: ^0.16.5
+  rolldown: 1.0.0-beta.50
+  unrun: ^0.2.10
+  unconfig-core: ^7.4.1
+  vitest: ^4.0.10
+  tinyexec: ^1.0.2
+  tinyglobby: ^0.2.15
+  wait-on: ^9.0.3
+  fs-extra: ^11.3.2
+  check-package-exists: ^1.1.6
+
+catalogs:
+  dev:
+    typescript: ~5.9.3
+    '@types/node': ^24.10.1
+    '@types/fs-extra': ^11.0.4
+    '@types/wait-on': ^5.3.4
+  electron:
+    electron: ^28.0.0
+    electron-builder: ^26.0.12
+
+onlyBuiltDependencies:
+  - electron
+  - electron-winstaller
+  - esbuild
+
+patchedDependencies:
+  check-package-exists: patches/check-package-exists.patch

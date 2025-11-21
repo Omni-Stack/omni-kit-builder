@@ -1,0 +1,45 @@
+{
+  "name": "@omni-build/core",
+  "version": "0.0.0",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.mts",
+  "bin": {
+    "omni-build": "dist/cli.mjs",
+    "omni": "dist/cli.mjs",
+    "ob": "dist/cli.mjs"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.mts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsdown",
+    "dev": "tsdown --watch",
+    "clear": "npx rimraf dist",
+    "clear-all": "npx rimraf dist node_modules"
+  },
+  "dependencies": {
+    "ansis": "catalog:",
+    "cac": "catalog:",
+    "check-package-exists": "catalog:",
+    "tsdown": "catalog:",
+    "unconfig-core": "catalog:",
+    "unrun": "catalog:",
+    "wait-on": "^9.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:dev",
+    "@types/wait-on": "catalog:dev",
+    "typescript": "catalog:dev",
+    "rolldown": "catalog:",
+    "electron": "catalog:electron",
+    "electron-builder": "catalog:electron"
+  }
+}

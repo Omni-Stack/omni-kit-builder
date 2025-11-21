@@ -1,0 +1,28 @@
+{
+  "name": "@shared/utils",
+  "version": "0.0.0",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.mts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.mts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsdown",
+    "dev": "tsdown --watch",
+    "clear": "npx rimraf dist",
+    "clear-all": "npx rimraf dist node_modules"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:dev",
+    "typescript": "catalog:dev",
+    "tsdown": "catalog:"
+  }
+}

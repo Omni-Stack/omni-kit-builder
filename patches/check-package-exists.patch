@@ -1,0 +1,38 @@
+diff --git a/dist/index.mjs b/dist/index.mjs
+index 4207adc904ae461d93b2e82d9791cdf957b527e6..094ebcb3f176c1cd502d5e09e27e93ca25086fca 100644
+--- a/dist/index.mjs
++++ b/dist/index.mjs
+@@ -9,6 +9,12 @@ var __require = /* @__PURE__ */ ((x) => typeof require !== "undefined" ? require
+ import path2 from "path";
+ import { sync as resolve } from "resolve";
+ 
++import { fileURLToPath } from "url";
++
++const __filename = fileURLToPath(import.meta.url);
++const __dirname = path2.dirname(__filename);
++ 
++
+ // src/utils.ts
+ import path from "path";
+ import { execaSync } from "@esm2cjs/execa";
+diff --git a/package.json b/package.json
+index b240a49d0cbf371b8fcc45820e43eea7ea10686b..561fe6f52275c8161c1e648bbe5a023a4e608fdd 100644
+--- a/package.json
++++ b/package.json
+@@ -13,8 +13,15 @@
+     "package",
+     "exists"
+   ],
+-  "main": "dist/index.js",
++  "main": "dist/index.mjs",
+   "types": "dist/index.d.ts",
++   "exports": {
++    ".": {
++      "types": "./dist/index.d.ts",
++      "import": "./dist/index.mjs",
++      "require": "./dist/index.js"
++    }
++  },
+   "files": [
+     "dist"
+   ],

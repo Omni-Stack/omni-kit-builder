@@ -1,0 +1,23 @@
+{
+  "name": "@examples/basic",
+  "version": "0.0.0",
+  "private": true,
+  "main": "dist-electron/main.js",
+  "scripts": {
+    "dev": "ob dev -t electron",
+    "build": "ob build -t electron",
+    "clear": "npx rimraf dist dist-*",
+    "clear-all": "npx rimraf dist dist-* node_modules"
+  },
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "electron-builder": "^26.0.12",
+    "tsdown": "^0.16.5",
+    "@omni-build/core": "workspace:*"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "electron"
+    ]
+  }
+}
