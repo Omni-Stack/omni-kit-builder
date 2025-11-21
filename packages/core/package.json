@@ -32,7 +32,7 @@
     "tsdown": "catalog:",
     "unconfig-core": "catalog:",
     "unrun": "catalog:",
-    "wait-on": "^9.0.3"
+    "wait-on": "catalog:"
   },
   "devDependencies": {
     "@types/node": "catalog:dev",
