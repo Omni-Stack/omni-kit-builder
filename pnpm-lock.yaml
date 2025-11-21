@@ -50,7 +50,7 @@ catalogs:
 
 patchedDependencies:
   check-package-exists:
-    hash: 6eaa26977cd39b1f8010f099cb0c9fd9a01aec71f78ae0fbed980668aae0ec8a
+    hash: 165eeb2f797c4d5d73738c85f64a1e43edcf5079e09b2f7f98a161f296c060ee
     path: patches/check-package-exists.patch
 
 importers:
@@ -86,7 +86,7 @@ importers:
         version: 6.7.14
       check-package-exists:
         specifier: 'catalog:'
-        version: 1.1.6(patch_hash=6eaa26977cd39b1f8010f099cb0c9fd9a01aec71f78ae0fbed980668aae0ec8a)
+        version: 1.1.6(patch_hash=165eeb2f797c4d5d73738c85f64a1e43edcf5079e09b2f7f98a161f296c060ee)
       tsdown:
         specifier: 'catalog:'
         version: 0.16.6(typescript@5.9.3)
@@ -3493,7 +3493,7 @@ snapshots:
       ansi-styles: 4.3.0
       supports-color: 7.2.0
 
-  check-package-exists@1.1.6(patch_hash=6eaa26977cd39b1f8010f099cb0c9fd9a01aec71f78ae0fbed980668aae0ec8a):
+  check-package-exists@1.1.6(patch_hash=165eeb2f797c4d5d73738c85f64a1e43edcf5079e09b2f7f98a161f296c060ee):
     dependencies:
       '@esm2cjs/execa': 6.1.1-cjs.1
       global-dirs: 4.0.0
