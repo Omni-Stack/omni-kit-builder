@@ -25,6 +25,9 @@ export interface ElectronBuildConfig {
 
 export type RendererConfig = {
   //#region dev
+  /**
+   * @default try `file://${path.join(renderer.cwd, renderer.entry)}` - if no `renderer.devUrl`
+   */
   devUrl?: string;
   //#endregion
 

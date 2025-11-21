@@ -23,7 +23,7 @@ if (isElectron) {
       }
     },
     {
-      url: isDev ? process.env.OMNI_RENDERER_DEV_URL || process.env.OMNI_RENDERER_URL : process.env.OMNI_RENDERER_URL,
+      url: isDev ? process.env.OMNI_RENDERER_URL || process.env.OMNI_RENDERER_DEV_URL : process.env.OMNI_RENDERER_URL,
       file: process.env.OMNI_RENDERER_FILE,
       openDevTools: isDev
     },

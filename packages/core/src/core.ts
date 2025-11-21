@@ -317,8 +317,8 @@ export class Core {
 
       if (config.electron.renderer?.devUrl) {
         setEnv(`${TAG}_RENDERER_DEV_URL`, config.electron.renderer.devUrl)
-      } else if(mode === 'development') {
-        const target = `file://${path.join(config.electron.renderer?.cwd || process.cwd(), config.electron.renderer?.entry || 'index.html')}`
+      } else if(mode === 'development' && config.electron.renderer?.cwd && config.electron.renderer?.entry) {
+        const target = `file://${path.join(config.electron.renderer.cwd, config.electron.renderer.entry)}`
         setEnv(`${TAG}_RENDERER_DEV_URL`, target)
       }
 

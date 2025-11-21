@@ -11,7 +11,7 @@ export default defineConfig({
     },
     renderer: {
       // devUrl，For example vite-projects
-      devUrl: 'http://localhost:5173',
+      // devUrl: 'http://localhost:5173',
       // Server Mode
       url: 'https://bing.com',
       // Static Mode
