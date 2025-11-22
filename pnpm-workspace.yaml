@@ -8,7 +8,6 @@ catalog:
   cac: ^6.7.14
   ansis: ^4.2.0
   tsdown: ^0.16.5
-  rolldown: 1.0.0-beta.50
   unrun: ^0.2.10
   unconfig-core: ^7.4.1
   vitest: ^4.0.10

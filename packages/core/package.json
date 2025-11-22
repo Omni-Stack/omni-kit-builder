@@ -38,7 +38,6 @@
     "@types/node": "catalog:dev",
     "@types/wait-on": "catalog:dev",
     "typescript": "catalog:dev",
-    "rolldown": "catalog:",
     "electron": "catalog:electron",
     "electron-builder": "catalog:electron"
   }
