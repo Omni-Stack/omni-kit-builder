@@ -15,7 +15,7 @@ catalog:
   tinyglobby: ^0.2.15
   wait-on: ^9.0.3
   fs-extra: ^11.3.2
-  check-package-exists: ^1.1.6
+  check-package-exists: ^1.2.0
 
 catalogs:
   dev:
@@ -31,6 +31,3 @@ onlyBuiltDependencies:
   - electron
   - electron-winstaller
   - esbuild
-
-patchedDependencies:
-  check-package-exists: patches/check-package-exists.patch
